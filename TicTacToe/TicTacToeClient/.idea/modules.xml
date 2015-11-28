@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/COMP2601Client-100892373.iml" filepath="$PROJECT_DIR$/COMP2601Client-100892373.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicTacToeClient.iml" filepath="$PROJECT_DIR$/TicTacToeClient.iml" />
     </modules>
   </component>
 </project>
-
