@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">COMP2601Client-100892373</string>
+    <string name="app_name">Tic-Tar-Toe</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_game">Tic Tar Toe</string>
     <string name="player_one">Client 01</string>
     <string name="player_two">Client 02</string>
 
-    <string name="ip_address">192.168.0.98</string>
+    <string name="activity2_button_single">single</string>
+    <string name="activity2_button_multip">multip</string>
+    <string name="activity2_button_help">help</string>
+    <string name="activity2_edit_text">edit</string>
+    <string name="activity2_button_exit">exit</string>
+    <string name="activity2_text_view">WELECOME TO TIC-TAR-TOE</string>
+
+    <string name="ip_address">10.42.0.1</string>
     <string name="connected">Connected!</string>
+
+    <string name="edit_message">Enter a message</string>
 
 
     <string name="connected_response">CONNECTED_RESPONSE</string>
     <string name="users_updated">USERS_UPDATED</string>
+    <string name="title_activity_main22">Tic Tar Toe</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_single">single</string>
+
+    <string name="tableLayout1">table</string>
+    <string name="button_init">-</string>
+    <string name="button11">button11</string>
+    <string name="button12">button12</string>
+    <string name="button13">button13</string>
+    <string name="button21">button21</string>
+    <string name="button22">button22</string>
+    <string name="button23">button23</string>
+    <string name="button31">button31</string>
+    <string name="button32">button32</string>
+    <string name="button33">button33</string>
+    <string name="button_new_game">button_new_game</string>
+    <string name="main_button_new_game_text">New Game</string>
+    <string name="main_table_layout">main_table_layout</string>
+    <string name="main_result_text">main_result_text</string>
+
 </resources>

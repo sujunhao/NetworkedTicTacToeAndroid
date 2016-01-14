@@ -2,16 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.carleton.comp2601client_100892373" >
 
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name="edu.carleton.client.Main22Activity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main22" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,8 +38,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GameActivity"
-            android:label="@string/title_activity_game" >
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".SingleActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_single" >
         </activity>
     </application>
 

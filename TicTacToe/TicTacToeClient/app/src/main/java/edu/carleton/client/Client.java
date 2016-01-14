@@ -69,7 +69,7 @@ public class Client extends Thread {
     public boolean started;
     ProgressBar spinner;
 
-    Client(String ip, int p, Context c, Activity a, Handler h, ListView lv, int i, ProgressBar s) {
+    Client(String ip, int p, Context c, Activity a, Handler h, ListView lv, int i, ProgressBar s, String playerName) {
         IP = ip;
         port = p;
         activity = a;
@@ -79,7 +79,8 @@ public class Client extends Thread {
         li = i;
         clients = new ArrayList<String>();
         started = false;
-        player = "Client 01";
+
+        player = playerName;
         clientInstance = this;
         spinner = s;
 

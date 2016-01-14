@@ -4,6 +4,7 @@ package edu.carleton.comp2601client_100892373;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+
+import edu.carleton.client.Main22Activity;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -23,6 +26,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        String playerName= intent.getStringExtra(Main22Activity.EXTRA_MESSAGE);
+
         setContentView(R.layout.activity_main);
         ProgressBar spinner = (ProgressBar) findViewById(R.id.progressBar);
         ListView listView = (ListView) findViewById(R.id.listview);
@@ -34,12 +40,17 @@ public class MainActivity extends ActionBarActivity {
         final Handler mHandler = new Handler();
         String ip;
         int port;
+
+
+
         ip = getString(R.string.ip_address);
         port = 5083;
         Context context = MainActivity.this;
-        cThread = new Client(ip, port, context, activity, mHandler, listView, li, spinner);
+        cThread = new Client(ip, port, context, activity, mHandler, listView, li, spinner, playerName);
         cThread.start();
         }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
